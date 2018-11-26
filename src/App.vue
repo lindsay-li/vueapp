@@ -17,5 +17,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: auto;
+}
+*{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.van-icon{
+  top:2px;
 }
 </style>
