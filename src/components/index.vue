@@ -9,16 +9,21 @@
         </div>
         <div class="head"></div>
       </div>
-      
-      
+      <div class="tabs">
+        <Tabs @click="onClick" color="#fff" :line-width="28" >
+          <Tab title="个性推荐">
+             <recomend></recomend>
+          </Tab>
+          <Tab title="主播电台"></Tab>
+        </Tabs>
+      </div>
     </div>
-    <div class="swip"></div>
-    <div class=content></div>
   </div>
 </template>
 
 <script>
-import { Icon } from 'vant';
+import { Icon ,Swipe, SwipeItem,Tab, Tabs} from 'vant';
+import recomend from './recomend.vue';
 export default {
   name: 'index',
   data () {
@@ -27,7 +32,17 @@ export default {
     }
   },
   components:{
-    Icon
+    Icon,
+    Swipe,
+    SwipeItem,
+    Tab,
+    Tabs,
+    recomend
+  },
+  methods:{
+    onClick(index, title) {
+      
+    }
   }
 }
 </script>
@@ -70,5 +85,9 @@ export default {
 .head{
   width: 15%;
   height: 50px;
+}
+
+.tabs{
+  padding-bottom: 50px;
 }
 </style>
