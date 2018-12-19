@@ -1,16 +1,16 @@
 <template>
   <div class="wrapper">
-    <div class="nav">
+    <div class="nav" v-show="!startSearch">
       <div class="top">
         <div class="logo"></div>
-        <div class="input">
+        <div class="input" @click="openSearch">
           <Icon name='search'></Icon>
           <span>搜Samsara</span>
         </div>
         <div class="head"></div>
       </div>
       <div class="tabs">
-        <Tabs @click="onClick" color="#fff" :line-width="28" >
+        <Tabs @click="onClick" color="#fff" :line-width="28" sticky>
           <Tab title="个性推荐">
              <recomend></recomend>
           </Tab>
@@ -18,17 +18,20 @@
         </Tabs>
       </div>
     </div>
+    <search v-if="startSearch" @close="closeSearch"></search>
   </div>
 </template>
 
 <script>
 import { Icon ,Swipe, SwipeItem,Tab, Tabs} from 'vant';
 import recomend from './recomend.vue';
+import search from './search.vue';
 export default {
   name: 'index',
   data () {
     return {
-      value:''
+      value:'',
+      startSearch:false
     }
   },
   components:{
@@ -37,11 +40,18 @@ export default {
     SwipeItem,
     Tab,
     Tabs,
-    recomend
+    recomend,
+    search
   },
   methods:{
     onClick(index, title) {
       
+    },
+    openSearch(){
+        this.startSearch = true;
+    },
+    closeSearch(){
+      this.startSearch = false;
     }
   }
 }
@@ -67,11 +77,11 @@ export default {
 }
 .input{
   width: 67%;
-  height:36px;
+  height:30px;
   background-color: #2EC1F4;
   border-radius: 30px;
   text-align: center;
-  line-height: 36px;
+  line-height: 30px;
   color:#97E0F9;
   font-size: 10pt;
   /* display: flex;
@@ -80,11 +90,11 @@ export default {
 }
 .logo{
   width: 15%;
-  height: 50px;
+  height: 48px;
 }
 .head{
   width: 15%;
-  height: 50px;
+  height: 48px;
 }
 
 .tabs{

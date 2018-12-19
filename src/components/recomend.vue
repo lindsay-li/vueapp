@@ -55,13 +55,23 @@
           <div class="hots">
               <div class="card">
                 <Card
-                 desc="70w"  
+                 desc="03:10"  
                  title="亡灵序曲大集合，燃爆荷尔蒙大大大所大所多所"
+                 tag="."
                  :thumb="imageURL"
                 >
+                <div slot="tags">
+                    <span class="play_num">18654</span>
+                    <span class="commend">35</span>
+                </div>
                 <div slot="footer">
-                    <van-button size="mini">按钮</van-button>
-                    <van-button size="mini">按钮</van-button>
+                    <div class="_info">
+                        <div class="_user">
+                            <div class="_img"><img src="../assets/test_user.png" /></div>
+                            <span>周铁男</span>
+                        </div>
+                        <span class="esli">...</span>
+                    </div>
                 </div>
                 </Card>
               </div>
@@ -166,5 +176,56 @@ export default {
     padding: 5px 5px;
     font-size: 10pt;
     color: #323233;
+}
+.play_num,
+.commend{
+    color: #979798;
+    font-size: 8pt;
+}
+.play_num::before{
+    display: inline-block;
+    content:'';
+    width: 16px;
+    height: 16px;
+    background: url(../assets/play_num.png) 0 0 no-repeat;
+    position: relative;
+    top: 3px;
+    margin-right: 1px;
+}
+.play_num{
+    margin-right: 15px;
+}
+.commend::before{
+   display: inline-block;
+    content:'';
+    width: 16px;
+    height: 16px;
+    background: url(../assets/commend.png) 0 0 no-repeat;
+    position: relative;
+    top: 3px;
+    margin-right: 2px; 
+}
+._info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+._user{
+    display: flex;
+    align-items: center;
+}
+._user ._img{
+    width: 27px;
+    height: 27px;
+    margin-right: 5px;
+}
+._img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.esli{
+    font-size: 16pt;
+    color: #979798;
 }
 </style>
