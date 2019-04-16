@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
     <div class="_navbar">
-        <div class="_left">
+        <div class="_left" @click="back">
             <Icon name='arrow-left'></Icon>
         </div>
         <div class="_center">歌手分类</div>
@@ -26,6 +26,9 @@
                 </div>
                 <div class="info">
                     <span class="name">薛之谦</span>
+                    <div class="cologe">
+                        <img src="../assets/cologe.jpg" />
+                    </div>
                 </div>
             </div>    
         </div>   
@@ -56,6 +59,9 @@ export default {
         search(index,text){
             this.current2 = index;
             this.keyword2 = text;
+        },
+        back(){
+            this.$router.go(-1);
         }
     }
 }
@@ -113,5 +119,39 @@ export default {
 }
 .title>span{
     margin-left:10px;
+}
+.content{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.avator{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-left:6px; 
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    height: 100%;
+    width: calc(100% - 66px);
+    border-bottom: 1px solid #E2E3E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info>span{
+    color: #5A5B5C;
+    margin-left: 5px;
+}
+.cologe{
+    width: 65px;
+    height: 29px;
+    margin-right: 6px;
 }
 </style>

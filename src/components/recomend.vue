@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="swip">
-        <Swipe :autoplay="3000" indicator-color="white" :width="375" :height="140">
+        <Swipe :autoplay="3000" indicator-color="white"  :height="135">
           <SwipeItem>
             <div class="bgg">1</div>
           </SwipeItem>
@@ -99,11 +99,10 @@ export default {
 <style scoped>
 .swip{
   width: 100%;
-  height:140px; 
-  margin-top: 8px;
+  height:135px; 
 }
 .bgg{
-  width: 96%;
+  width: 97%;
   height: 100%;
   background-color: blanchedalmond;
   border-radius: 8px;
@@ -141,7 +140,7 @@ export default {
     margin: 20px 0;
 }
 .content{
-    width: 96%;
+    width: 97%;
     margin: 0 auto;
 }
 .title {
@@ -162,17 +161,17 @@ export default {
     justify-content: space-between;
 }
 .list .l_item{
-    width: 117px;
+    width: 114px;
     margin-bottom: 10px;
 }
-.pic{
-    width: 100%;
-    height: 120px;
+.l_item .pic{
+    width: 114px;
+    height: 114px;
     background-color: #09B6F2;
     border-radius: 6px;
 }
-.tit{
-    width: 107px;
+.l_item .tit{
+    width: 104px;
     padding: 5px 5px;
     font-size: 10pt;
     color: #323233;

@@ -10,7 +10,7 @@
         <div class="head"></div>
       </div>
       <div class="tabs">
-        <Tabs @click="onClick" color="#fff" :line-width="28" sticky>
+        <Tabs @click="onClick" color="#fff" :line-width="30" sticky>
           <Tab title="个性推荐">
              <recomend></recomend>
           </Tab>
@@ -26,6 +26,7 @@
 import { Icon ,Swipe, SwipeItem,Tab, Tabs} from 'vant';
 import recomend from './recomend.vue';
 import search from './search.vue';
+import ajax from '../server/index.js'
 export default {
   name: 'index',
   data () {
@@ -42,6 +43,9 @@ export default {
     Tabs,
     recomend,
     search
+  },
+  created(){
+    // ajax('/banner').then(res=>{console.log(JSON.stringify(res))})
   },
   methods:{
     onClick(index, title) {
@@ -65,36 +69,39 @@ export default {
 }
 .nav{
   width: 100%;
-  height:200px;
+  height:207px;
   background-color:  #09B6F2;
-
 }
 .top{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 26px;
 }
 .input{
-  width: 67%;
-  height:30px;
+  width:257px;
+  height:29px;
   background-color: #2EC1F4;
-  border-radius: 30px;
+  border-radius: 29px;
   text-align: center;
-  line-height: 30px;
+  line-height: 29px;
   color:#97E0F9;
-  font-size: 10pt;
+  font-size: 10px;
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
+.input span{
+  font-size: 10px;
+}
 .logo{
   width: 15%;
-  height: 48px;
+  /* height: 48px; */
 }
 .head{
   width: 15%;
-  height: 48px;
+  /* height: 48px; */
 }
 
 .tabs{

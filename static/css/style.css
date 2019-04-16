@@ -1,0 +1,106 @@
+*{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .van-icon{
+    top:2px;
+  }
+  .van-tabs__nav{
+    background-color: #09B6F2 !important;
+  }
+  .van-tab{
+    color:#fff;
+    background-color: inherit;
+    line-height: 50px;
+  }
+  .van-tab--active{
+    font-weight: 600;
+  }
+  [class*=van-hairline]::after{
+    border: none;
+  }
+  .van-tabs__line{
+    bottom: 24px;
+    height: 3px;
+    border-radius: 3px;
+  }
+  .van-tabs--line .van-tabs__wrap{
+    height: 50px;
+  }
+  .van-hairline--top-bottom::after{
+    border: none;
+  }
+  .van-tabs--line{
+    padding-top: 50px;
+  }
+  /*************/
+  #app .van-tabbar{
+    /* background-color: #2EC1F4; */
+    border-top:1px solid #D0CECB;
+  }
+  .van-card__thumb{
+    left: 0;
+  }
+  .van-card__thumb{
+    width: 114px;
+    height: 114px;
+  }
+  .van-card{
+    height: 123px;
+    padding: 5px 15px 5px 130px;
+    background-color: #fff;
+  }
+  .van-card__desc{
+    position: absolute;
+    left: 74px;
+    bottom:5px; 
+    color: #fff;
+  }
+  .van-card__tag{
+    background-color: transparent !important;
+    position: absolute;
+    display: inline-block;
+    width: 114px;
+    height: 114px;
+    text-align: center;
+    line-height: 114px;
+  }
+  .van-card__tag::before{
+    display: inline-block;
+    content:'';
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .van-card__tag::after{
+    display: inline-block;
+    content:'';
+    width: 32px;
+    height: 32px;
+    background:url(./assets/play.png) 0 0 no-repeat ;
+    background-size:80%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 5px 0 0 5px;
+  }
+  .van-tag--mark{
+    padding: 0;
+    border-radius: 6px;
+  }
+  .van-card__footer{
+    width: 215px;
+    right: 0;
+    left: 130px;
+    border-top: 1px solid #E1E2E3;
+    padding-top:10px; 
+  }

@@ -21,14 +21,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 *{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 10pt;
+  font-size: 14px;
 }
 .van-icon{
   top:2px;
@@ -39,6 +39,7 @@ export default {
 .van-tab{
   color:#fff;
   background-color: inherit;
+  line-height: 50px;
 }
 .van-tab--active{
   font-weight: 600;
@@ -47,9 +48,18 @@ export default {
   border: none;
 }
 .van-tabs__line{
-  bottom: 20px;
-  height: 2px;
-  border-radius: 2px;
+  bottom: 24px;
+  height: 3px;
+  border-radius: 3px;
+}
+.van-tabs--line .van-tabs__wrap{
+  height: 50px;
+}
+.van-hairline--top-bottom::after{
+  border: none;
+}
+.van-tabs--line{
+  padding-top: 50px;
 }
 /*************/
 #app .van-tabbar{
@@ -60,17 +70,17 @@ export default {
   left: 0;
 }
 .van-card__thumb{
-  width: 119px;
-  height: 119px;
+  width: 114px;
+  height: 114px;
 }
 .van-card{
-  height: 129px;
+  height: 123px;
   padding: 5px 15px 5px 130px;
   background-color: #fff;
 }
 .van-card__desc{
   position: absolute;
-  left: 80px;
+  left: 74px;
   bottom:5px; 
   color: #fff;
 }
@@ -78,10 +88,10 @@ export default {
   background-color: transparent !important;
   position: absolute;
   display: inline-block;
-  width: 119px;
-  height: 119px;
+  width: 114px;
+  height: 114px;
   text-align: center;
-  line-height: 119px;
+  line-height: 114px;
 }
 .van-card__tag::before{
   display: inline-block;
