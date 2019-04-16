@@ -4,7 +4,7 @@
       <div class="top">
         <div class="logo"></div>
         <div class="input" @click="openSearch">
-          <Icon name='search'></Icon>
+          <Icon name='search' style="top:4px"></Icon>
           <span>搜Samsara</span>
         </div>
         <div class="head"></div>
@@ -69,7 +69,7 @@ export default {
 }
 .nav{
   width: 100%;
-  height:207px;
+  height:414px;
   background-color:  #09B6F2;
 }
 .top{
@@ -77,23 +77,23 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 26px;
+  padding-top: 52px;
 }
 .input{
-  width:257px;
-  height:29px;
+  width:514px;
+  height:60px;
   background-color: #2EC1F4;
-  border-radius: 29px;
+  border-radius: 30px;
   text-align: center;
-  line-height: 29px;
+  line-height: 60px;
   color:#97E0F9;
-  font-size: 10px;
+  font-size: 24px;
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
 .input span{
-  font-size: 10px;
+  font-size: 20px;
 }
 .logo{
   width: 15%;
@@ -105,6 +105,6 @@ export default {
 }
 
 .tabs{
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 </style>

@@ -66,7 +66,7 @@ export default {
 <style scoped>
 .head{
     width: 100%;
-    height: 48px;
+    height: 112px;
     background-color: #09B6F2;
 }
 .search{
@@ -78,8 +78,9 @@ export default {
     margin: 0 auto;
 }
 .input{
-   width: 313px;
-   height: 30px;
+   width: 626px;
+   height: 60px;
+   line-height: 60px;
    border-radius: 30px; 
    background-color: #2EC1F4;
    color: #97E0F9;
@@ -89,46 +90,51 @@ export default {
     border: none;
     outline: none;
     color:#97E0F9;
-    font-size: 10pt;
-    line-height: 30px;
-    height: 30px;
-    width: 280px;
+    font-size: 20px;
+    line-height: 60px;
+    height: 60px;
+    width: 540px;
 }
 ::-webkit-input-placeholder{
     color: #97E0F9;
 } 
 .logo{
-    margin-left: 8px;
+    margin-left: 16px;
+    position: relative;
+    top: 4px;
+    font-size: 28px;
 }
 .text{
+    font-size: 20px;
     color: #fff;
 }
 .recommend{
     width:96%;
-    height: 50px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
 }
 .tit{
-    font-size: 14pt;
+    font-size: 28px;
     color: #323233;
     font-weight: bold;
 }
 .tit::after{
     display: inline-block;
     content:'';
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
     background: url(../assets/right.png) 0 0 no-repeat;
-    margin-left: 7px;
+    background-size: 100%;
+    margin-left: 14px;
     position: relative;
-    top: 2px;
+    top: 5px;
 }
 .avator{
-    width: 69px;
-    height: 28px;
+    width: 140px;
+    height: 56px;
 }
 .avator img{
     width: 100%;
@@ -142,24 +148,28 @@ export default {
 .hot_search,
 .history{
     width: 96%;
-    margin: 5px auto 0;
+    margin: 10px auto 0;
 }
 .title{
     width: 100%;
-    height: 44px;
+    height: 88px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 12pt;
+    font-size: 24px;
     font-weight: bold;
+}
+.title>span{
+    font-size: 28px;
 }
 .crux{
     color: #323233;
-    padding: 9px 15px;
+    padding: 18px 30px;
     border-radius: 30px;
     background-color: #EEEFF0;
-    margin-bottom: 7px;
-    margin-right: 8px;
+    margin-bottom: 14px;
+    margin-right: 16px;
+    font-size: 22px;
 }
 .list{
     width: 100%;

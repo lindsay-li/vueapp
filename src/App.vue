@@ -28,7 +28,7 @@ export default {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 24px;
 }
 .van-icon{
   top:2px;
@@ -39,7 +39,7 @@ export default {
 .van-tab{
   color:#fff;
   background-color: inherit;
-  line-height: 50px;
+  line-height: 100px;
 }
 .van-tab--active{
   font-weight: 600;
@@ -48,18 +48,18 @@ export default {
   border: none;
 }
 .van-tabs__line{
-  bottom: 24px;
-  height: 3px;
+  bottom: 40px;
+  height: 4px;
   border-radius: 3px;
 }
 .van-tabs--line .van-tabs__wrap{
-  height: 50px;
+  height: 100px;
 }
 .van-hairline--top-bottom::after{
   border: none;
 }
 .van-tabs--line{
-  padding-top: 50px;
+  padding-top: 100px;
 }
 /*************/
 #app .van-tabbar{
@@ -70,34 +70,34 @@ export default {
   left: 0;
 }
 .van-card__thumb{
-  width: 114px;
-  height: 114px;
+  width: 228px;
+  height: 228px;
 }
 .van-card{
-  height: 123px;
-  padding: 5px 15px 5px 130px;
+  height: 246px;
+  padding: 10px 30px 10px 260px;
   background-color: #fff;
 }
 .van-card__desc{
   position: absolute;
-  left: 74px;
-  bottom:5px; 
+  left: 148px;
+  bottom:10px; 
   color: #fff;
 }
 .van-card__tag{
   background-color: transparent !important;
   position: absolute;
   display: inline-block;
-  width: 114px;
-  height: 114px;
+  width: 228px;
+  height: 228px;
   text-align: center;
-  line-height: 114px;
+  line-height: 228px;
 }
 .van-card__tag::before{
   display: inline-block;
   content:'';
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background-color: rgba(255,255,255,0.6);
   border-radius: 50%;
   position: absolute;
@@ -108,25 +108,48 @@ export default {
 .van-card__tag::after{
   display: inline-block;
   content:'';
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   background:url(./assets/play.png) 0 0 no-repeat ;
   background-size:80%; 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  margin: 5px 0 0 5px;
+  margin: 10px 0 0 10px;
 }
 .van-tag--mark{
   padding: 0;
   border-radius: 6px;
 }
+.van-card__header{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.van-card__content{
+  height: 180px;
+}
+.van-card__title{
+  line-height: 32px;
+  max-height: 64px;
+}
 .van-card__footer{
-  width: 215px;
+  position: absolute;
+  width: 430px;
   right: 0;
-  left: 130px;
+  left: 260px;
   border-top: 1px solid #E1E2E3;
-  padding-top:10px; 
+  padding-top:160px; 
+}
+.van-tabbar{
+  height: 100px;
+}
+.van-tabbar-item__icon{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.van-tabbar-item__icon img{
+  height: 36px;
 }
 </style>
