@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="swip">
-        <Swipe :autoplay="3000" indicator-color="white"  :height="270">
+        <Swipe :autoplay="3000" indicator-color="white"  >
           <SwipeItem>
             <div class="bgg">1</div>
           </SwipeItem>
@@ -103,7 +103,7 @@ export default {
 }
 .bgg{
   width: 97%;
-  height: 100%;
+  height: 270px;
   background-color: blanchedalmond;
   border-radius: 8px;
   margin: 0 auto;

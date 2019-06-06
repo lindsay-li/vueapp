@@ -140,7 +140,8 @@ export default {
   right: 0;
   left: 260px;
   border-top: 1px solid #E1E2E3;
-  padding-top:160px; 
+  /* padding-top:160px;  */
+  top: 160px;
 }
 .van-tabbar{
   height: 100px;

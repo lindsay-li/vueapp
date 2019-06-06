@@ -18,6 +18,13 @@
     "wifiupdateall": "apicloud wifiSync --project ./src --updateAll true --port 8686"
   },
   "dependencies": {
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-px-to-viewport": "^1.1.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
     "vant": "^1.4.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
